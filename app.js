@@ -23,7 +23,7 @@ app.use(
     cors({
         origin: [
             "http://localhost:3000",
-            "https://whatsup-lime-rho.vercel.app",
+            "https://auth-template-nine.vercel.app",
         ],
         credentials: true,
     }),
