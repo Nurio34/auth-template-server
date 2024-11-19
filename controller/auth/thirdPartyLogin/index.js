@@ -22,7 +22,6 @@ const thirdPartyLogin = async (req, res, next) => {
             username,
             email,
             avatar,
-            newUser: true,
             isVerified: true,
             password: "Loggedinwith_3rdParty",
             passwordConfirm: "Loggedinwith_3rdParty",

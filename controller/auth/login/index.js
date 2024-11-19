@@ -34,7 +34,6 @@ const login = async (req, res, next) => {
         username: UserToLogin.username,
         email: UserToLogin.email,
         isVerified: UserToLogin.isVerified,
-        newUser: UserToLogin.newUser,
         avatar: UserToLogin.avatar,
         createdAt: UserToLogin.createdAt,
         otpExpires: UserToLogin.otpExpires,

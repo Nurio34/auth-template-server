@@ -17,7 +17,6 @@ const sendCookies = (req, res) => {
         username: user.username,
         email: user.email,
         isVerified: user.isVerified,
-        newUser: user.newUser,
         avatar: user.avatar,
         createdAt: user.createdAt,
         otpExpires: user.otpExpires,

@@ -14,9 +14,7 @@ const login = require("../controller/auth/login");
 const logout = require("../controller/auth/logout");
 const checkIfAccountExists = require("../controller/auth/forgetPassword/checkIfAccountExists");
 const resetPassword = require("../controller/auth/resetPassword");
-const toggleNewUser = require("../controller/auth/toggleNewUser");
 const thirdPartyLogin = require("../controller/auth/thirdPartyLogin");
-const createProfile = require("../controller/auth/createProfile");
 
 router.post(
     "/signup",
@@ -58,9 +56,5 @@ router.post(
 router.post("/reset-password", catchAsync(resetPassword));
 
 router.post("/firebase-login", catchAsync(thirdPartyLogin));
-
-router.post("/toggle-new-user", catchAsync(toggleNewUser));
-
-router.post("/create-profile", catchAsync(createProfile));
 
 module.exports = router;

@@ -60,10 +60,6 @@ const UserSchema = new mongoose.Schema(
                 message: "Passwords don't match !",
             },
         },
-        newUser: {
-            type: Boolean,
-            default: true,
-        },
         avatar: {
             type: String,
             default: "",
@@ -72,10 +68,7 @@ const UserSchema = new mongoose.Schema(
             type: Boolean,
             default: false,
         },
-        about: {
-            type: String,
-            default: "",
-        },
+
         otp: {
             type: String,
             default: "",
