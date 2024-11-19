@@ -15,8 +15,6 @@ app.use(
     }),
 );
 
-app.use(helmet());
-
 app.use(cookieParser());
 
 app.use(
@@ -28,6 +26,8 @@ app.use(
         credentials: true,
     }),
 );
+
+app.use(helmet());
 
 app.use("/api/v1/auth", AuthRouter);
 
